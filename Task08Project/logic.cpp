@@ -10,7 +10,7 @@ int recursion(int number) {
 	if (number == 0) {
 		return 1;
 	}
-
+	 
 	return recursion(number - 1) * 2;
 }
 

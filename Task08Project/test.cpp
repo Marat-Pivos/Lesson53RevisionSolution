@@ -33,11 +33,11 @@ void test03() {
 
 void test04() {
 	int number = 4;
-	int expected = 16;
+	int expected = 16; 
 	print(number, "test04", expected);
 }
 
-void test05() {
+void test05() { 
 	int number = 5;
 	int expected = 32;
 	print(number, "test05", expected);
