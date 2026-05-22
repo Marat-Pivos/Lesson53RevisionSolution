@@ -10,3 +10,17 @@
 // T4 = 1 + 2 + 3 + 4 = 10
 // T5 = 1 + 2 + 3 + 4 + 5 = 15
 // T6 = 1 + 2 + 3 + 4 + 5 + 6 = 21
+#include "logic.h"
+
+double calculate_average(int vector[], int size) {
+	if ()
+		int sum = 0;
+
+	for (int i = 0; i < size; i++) {
+		sum += vector[i];
+	}
+
+	double avg = sum / size;
+
+	return avg;
+}

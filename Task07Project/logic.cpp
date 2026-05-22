@@ -7,19 +7,19 @@
 #include "logic.h"
 
 int recursion(int number) {
-	if (number == 1) {
-		return 1;
+	if (number == 0) {
+		return 0;
 	}
 
 	if (number % 2 != 0) {
-		return recursion(number - 1) + number;
+		return recursion(number / 10) + 1;
 	}
 	return recursion(number - 1) + number;
 }
 
 int count_of_odd_digits(int number) {
-	if (number < 1) {
-		return -1;
+	if (number == 0) {
+		return 0;
 	}
 
 	return recursion(number);

@@ -7,23 +7,18 @@
 #include "logic.h"
 
 int recursion(int number) {
-	if (number == 1) {
-		return 2;
+	if (number == 0) {
+		return 1;
 	}
 
-	return recursion(number - 1) + 2;
+	return recursion(number - 1) * 2;
 }
 
 int get_number(int index) {
 	if (index <= 0) {
-		return index;
-	}
-	if (index == 1) {
-		return 2;
-	}
-	if (index == 0) {
 		return -1;
 	}
+	
 
 
 	return recursion(index);

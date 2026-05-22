@@ -7,5 +7,13 @@
 #include "logic.h"
 
 double calculate_average(int vector[], int size) {
-	return 0.0;
+	int sum = 0;
+
+	for (int i = 0; i < size; i++) {
+		sum += vector[i];
+	}
+
+	double avg = sum / size;
+
+	return avg;
 }
